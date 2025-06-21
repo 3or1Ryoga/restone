@@ -2,6 +2,7 @@ import { Phone, Mail, ChevronDown, CheckCircle, ArrowRight, ArrowDown } from "lu
 import { Button } from "@/components/ui/button"
 import Link from 'next/link';
 import Image from "next/image"
+import { ClipboardList, MessageCircle } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -36,7 +37,7 @@ export default function HomePage() {
             className="text-xl md:text-2xl lg:text-3xl mb-12 leading-relaxed max-w-4xl mx-auto"
             style={{ fontFamily: "Shippori Mincho, serif" }}
           >
-            手作業で優しく蘇らせる、心を込めた墓石クリーニング
+            真心を込めて、手洗い。大切な墓石に、ふたたび安らぎを届けます。
           </p>
         </div>
 
@@ -123,7 +124,7 @@ export default function HomePage() {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-16 md:py-24 px-4 bg-white">
+      {/* <section className="py-16 md:py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-[#20319d]"
@@ -132,9 +133,6 @@ export default function HomePage() {
             信頼の施工事例
           </h2>
 
-          {/* Case Study 1 */}
-
-          {/* Case Study 2 */}
           <div className="mb-16">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="text-center">
@@ -177,78 +175,138 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services and Pricing Section */}
-      <section className="py-16 md:py-24 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Services */}
-            <div>
-              <h2
-                className="text-3xl md:text-4xl font-bold mb-8 text-[#20319d]"
+      <section className="py-16 md:py-24 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <h2
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-[#20319d]"
+            style={{ fontFamily: "Shippori Mincho, serif" }}
+          >
+            サービスプランと料金
+          </h2>
+
+          {/* 3つのプラン */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {/* お掃除プラン */}
+            <div className="border border-gray-200 rounded-lg shadow-lg p-6 flex flex-col bg-[#f6ede8]">
+              {/* <Image
+                src="/placeholder.svg?height=300&width=400"
+                alt="お掃除プランのイメージ"
+                width={400}
+                height={300}
+                className="rounded-md mx-auto mb-6"
+              /> */}
+              <h3
+                className="text-2xl font-bold mb-4 text-[#20319d] text-center"
                 style={{ fontFamily: "Shippori Mincho, serif" }}
               >
-                サービス内容
-              </h2>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-[#20319d] mt-1 flex-shrink-0" />
-                  <p className="text-lg md:text-xl" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                    墓石本体の清掃・研磨
-                  </p>
+                お掃除プラン
+              </h3>
+              <p className="text-base leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+                墓石の拭き上げ清掃、周囲の草取り・清掃を行う簡易的な清掃プランです。
+              </p>
+            </div>
+
+            {/* 手洗い洗浄プラン */}
+            <div className="border-2 border-[#20319d] rounded-lg shadow-xl p-6 flex flex-col bg-white relative">
+              <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#20319d] text-white px-4 py-1 rounded-full font-bold">
+                おすすめ
+              </span>
+              {/* <Image
+                src="/placeholder.svg?height=300&width=400"
+                alt="手洗い洗浄プランのイメージ"
+                width={400}
+                height={300}
+                className="rounded-md mx-auto mb-6"
+              /> */}
+              <h3
+                className="text-2xl font-bold mb-4 text-[#20319d] text-center"
+                style={{ fontFamily: "Shippori Mincho, serif" }}
+              >
+                手洗い洗浄プラン
+              </h3>
+              <p className="text-base leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+                職人が手洗いで優しく墓石の内部から長年の汚れを取り去り、キレイに磨き上げます。周囲の草取り・清掃・文字塗り等も付いたおトクなプランです。
+                <br />
+                <span className="text-sm text-gray-600 mt-2 block">※墓石洗浄には石材に優しい専用洗剤を使用します。</span>
+              </p>
+            </div>
+
+            {/* 長持ちコーティングプラン */}
+            <div className="border border-gray-200 rounded-lg shadow-lg p-6 flex flex-col bg-[#f6ede8]">
+              {/* <Image
+                src="/placeholder.svg?height=300&width=400"
+                alt="長持ちコーティングプランのイメージ"
+                width={400}
+                height={300}
+                className="rounded-md mx-auto mb-6"
+              /> */}
+              <h3
+                className="text-2xl font-bold mb-4 text-[#20319d] text-center"
+                style={{ fontFamily: "Shippori Mincho, serif" }}
+              >
+                長持ちコーティングプラン
+              </h3>
+              <p className="text-base leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+                墓石洗濯プランにプラスして、墓石表面の小さな穴をふさぐ特殊コーティングを施すプレミアムプラン。水の吸込みを防ぎ、墓石を長持ちさせます。
+              </p>
+            </div>
+          </div>
+
+          {/* 詳細料金表 */}
+          <div className="bg-white p-8 rounded-lg shadow-lg border">
+            <h3
+              className="text-2xl md:text-3xl font-bold mb-8 text-[#20319d] text-center"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              基本料金のご案内
+            </h3>
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+              {/* 手洗い洗浄 */}
+              <div>
+                <h4 className="text-xl font-bold text-[#20319d] border-b-2 border-[#20319d] pb-2 mb-4" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                  手洗い洗浄
+                </h4>
+                <div className="space-y-3 text-lg" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+                  <div className="flex justify-between">
+                    <span>和型8寸（建立10年まで）</span>
+                    <span className="font-semibold">40,000円</span>
+                  </div>
+                  <p className="text-sm text-gray-600 ml-4">※建立から10年経過ごとに＋10,000円</p>
+                  <p className="text-sm text-gray-600 ml-4">※＋1寸ごとに＋10,000円</p>
+                  <div className="flex justify-between border-t pt-3">
+                    <span>法名版</span>
+                    <span className="font-semibold">10,000円〜</span>
+                  </div>
                 </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-[#20319d] mt-1 flex-shrink-0" />
-                  <p className="text-lg md:text-xl" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                    文字彫刻部分の清掃
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-[#20319d] mt-1 flex-shrink-0" />
-                  <p className="text-lg md:text-xl" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                    周辺の清掃・整理
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-[#20319d] mt-1 flex-shrink-0" />
-                  <p className="text-lg md:text-xl" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                    作業前後の写真報告
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <CheckCircle className="w-6 h-6 text-[#20319d] mt-1 flex-shrink-0" />
-                  <p className="text-lg md:text-xl" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                    無料見積もり・相談
-                  </p>
+              </div>
+
+              {/* 周辺作業 */}
+              <div>
+                <h4 className="text-xl font-bold text-[#20319d] border-b-2 border-[#20319d] pb-2 mb-4" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                  周辺作業
+                </h4>
+                <div className="space-y-3 text-lg" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+                  <div className="flex justify-between"><span>周辺清掃・草取り等（一区画）</span><span className="font-semibold">5,000円〜</span></div>
+                  <div className="flex justify-between"><span>石塔本体文字墨入れ（一基）</span><span className="font-semibold">10,000円〜</span></div>
+                  <div className="flex justify-between"><span>法名版文字墨入れ（一枚）</span><span className="font-semibold">5,000円〜</span></div>
+                  <div className="flex justify-between"><span>灯篭（一対）・小物洗浄</span><span className="font-semibold">各2,000円〜</span></div>
+                  <div className="flex justify-between"><span>外柵洗浄（一区画）</span><span className="font-semibold">15,000円〜</span></div>
+                  <div className="flex justify-between"><span>目地の補修（一基）</span><span className="font-semibold">5,000円〜</span></div>
+                  <div className="flex justify-between"><span>防草透水舗装</span><span className="font-semibold">20,000円/㎡</span></div>
+                  <div className="flex justify-between"><span>防水・防汚コーティング（一基）</span><span className="font-semibold">25,000円〜</span></div>
                 </div>
               </div>
             </div>
 
-            {/* Pricing */}
-            <div>
-              <h2
-                className="text-3xl md:text-4xl font-bold mb-8 text-[#20319d]"
-                style={{ fontFamily: "Shippori Mincho, serif" }}
-              >
-                料金目安
-              </h2>
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <div className="text-center mb-6">
-                  <p className="text-5xl md:text-6xl font-bold text-[#20319d] mb-2">49,800円</p>
-                  <p className="text-xl md:text-2xl text-[#333333]" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                    〜（税込）
-                  </p>
-                </div>
-                <div className="space-y-3 text-lg md:text-xl" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                  <p>• 一般的な墓石（2〜3㎡）</p>
-                  <p>• 作業時間：2〜4時間</p>
-                  <p>• 出張費込み</p>
-                  <p className="text-sm md:text-base text-gray-600 mt-4">
-                    ※墓石の大きさ・汚れの程度により料金が変動いたします
-                  </p>
-                </div>
-              </div>
+            <div className="text-center mt-8 pt-4 border-t">
+              <p className="text-sm text-gray-600" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+                ※表記価格はすべて税込です。
+                <br />
+                ※各種料金は、建墓年数、墓石サイズ、汚れの状態によって変動いたします。詳しくはお見積もりにてご提示いたします。
+              </p>
             </div>
           </div>
         </div>
@@ -341,118 +399,254 @@ export default function HomePage() {
       </section>
 
       {/* Cleaning Process Section */}
-      <section className="py-16 md:py-24 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-[#20319d]"
-            style={{ fontFamily: "Shippori Mincho, serif" }}
-          >
-            墓石清掃の工程
-          </h2>
+      {/* Cleaning Process Section */}
+<section className="py-16 md:py-24 px-4">
+  <div className="max-w-7xl mx-auto">
+    <h2
+      className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16 text-[#20319d]"
+      style={{ fontFamily: "Shippori Mincho, serif" }}
+    >
+      墓石清掃の工程
+    </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <Image
-                src="/placeholder.svg?height=300&width=400"
-                alt="現地調査・養生の様子"
-                width={400}
-                height={300}
-                className="rounded-lg shadow-lg mx-auto mb-6"
-              />
-              <div
-                className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
-                style={{ fontFamily: "Shippori Mincho, serif" }}
-              >
-                一
-              </div>
-              <h3
-                className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
-                style={{ fontFamily: "Shippori Mincho, serif" }}
-              >
-                現地調査・養生
-              </h3>
-              <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                墓石の状態を詳しく調査し、周辺を汚さないよう丁寧に養生いたします
-              </p>
+    {/* 9つの工程を3列で表示 */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* 工程 1 */}
+          <div className="text-center flex flex-col">
+            {/* <Image
+              src="/placeholder.svg?height=300&width=400"
+              alt="草取り・掃除の様子"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg mx-auto mb-6"
+            /> */}
+            <div
+              className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              一
             </div>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              草取り・掃除
+            </h3>
+            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              洗浄前にお墓周辺の草取りと清掃をします。
+            </p>
+          </div>
 
-            <div className="text-center">
-              <Image
-                src="/placeholder.svg?height=300&width=400"
-                alt="洗浄・除去作業の様子"
-                width={400}
-                height={300}
-                className="rounded-lg shadow-lg mx-auto mb-6"
-              />
-              <div
-                className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
-                style={{ fontFamily: "Shippori Mincho, serif" }}
-              >
-                二
-              </div>
-              <h3
-                className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
-                style={{ fontFamily: "Shippori Mincho, serif" }}
-              >
-                洗浄・除去作業
-              </h3>
-              <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                専用洗剤を使用し、苔や汚れを手作業で優しく除去いたします
-              </p>
+          {/* 工程 2 */}
+          <div className="text-center flex flex-col">
+            {/* <Image
+              src="/placeholder.svg?height=300&width=400"
+              alt="汚れ落としの様子"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg mx-auto mb-6"
+            /> */}
+            <div
+              className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              二
             </div>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              汚れ落とし
+            </h3>
+            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              たっぷりと水をかけ、とても軟らかいヘラで表面にこびりついた汚れを落とします。
+            </p>
+          </div>
 
-            <div className="text-center">
-              <Image
-                src="/placeholder.svg?height=300&width=400"
-                alt="研磨・仕上げ作業の様子"
-                width={400}
-                height={300}
-                className="rounded-lg shadow-lg mx-auto mb-6"
-              />
-              <div
-                className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
-                style={{ fontFamily: "Shippori Mincho, serif" }}
-              >
-                三
-              </div>
-              <h3
-                className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
-                style={{ fontFamily: "Shippori Mincho, serif" }}
-              >
-                研磨・仕上げ
-              </h3>
-              <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                石材専用の研磨材で丁寧に磨き上げ、美しい輝きを取り戻します
-              </p>
+          {/* 工程 3 */}
+          <div className="text-center flex flex-col">
+            {/* <Image
+              src="/placeholder.svg?height=300&width=400"
+              alt="洗剤塗布の様子"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg mx-auto mb-6"
+            /> */}
+            <div
+              className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              三
             </div>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              洗剤塗布
+            </h3>
+            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              石材に優しい専用の洗剤を数種類使い分け、性質の異なる汚れを落とします。
+            </p>
+          </div>
 
-            <div className="text-center">
-              <Image
-                src="/placeholder.svg?height=300&width=400"
-                alt="最終確認・清掃の様子"
-                width={400}
-                height={300}
-                className="rounded-lg shadow-lg mx-auto mb-6"
-              />
-              <div
-                className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
-                style={{ fontFamily: "Shippori Mincho, serif" }}
-              >
-                四
-              </div>
-              <h3
-                className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
-                style={{ fontFamily: "Shippori Mincho, serif" }}
-              >
-                最終確認・清掃
-              </h3>
-              <p className="text-base md:text-lg leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                仕上がりを最終確認し、周辺を清掃して美しい状態でお引き渡しします
-              </p>
+          {/* 工程 4 */}
+          <div className="text-center flex flex-col">
+            {/* <Image
+              src="/placeholder.svg?height=300&width=400"
+              alt="細かな汚れ落としの様子"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg mx-auto mb-6"
+            /> */}
+            <div
+              className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              四
             </div>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              汚れ落とし
+            </h3>
+            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              墓石全体、くぼみ、細かな箇所を道具を使い分け汚れを落としていきます。
+            </p>
+          </div>
+
+          {/* 工程 5 */}
+          <div className="text-center flex flex-col">
+            {/* <Image
+              src="/placeholder.svg?height=300&width=400"
+              alt="洗い流しの様子"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg mx-auto mb-6"
+            /> */}
+            <div
+              className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              五
+            </div>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              洗い流し
+            </h3>
+            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              洗剤、よごれをたっぷりの水で洗い流します。
+            </p>
+          </div>
+
+          {/* 工程 6 */}
+          <div className="text-center flex flex-col">
+            {/* <Image
+              src="/placeholder.svg?height=300&width=400"
+              alt="拭き上げの様子"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg mx-auto mb-6"
+            /> */}
+            <div
+              className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              六
+            </div>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              拭き上げ
+            </h3>
+            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              汚れが落ち、キレイになったお墓を丁寧に拭き上げます。
+            </p>
+          </div>
+
+          {/* 工程 7 */}
+          <div className="text-center flex flex-col">
+            {/* <Image
+              src="/placeholder.svg?height=300&width=400"
+              alt="文字塗りの様子"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg mx-auto mb-6"
+            /> */}
+            <div
+              className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              七
+            </div>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              文字塗り
+            </h3>
+            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              専用の塗料で文字に色を入れていきます。
+            </p>
+          </div>
+
+          {/* 工程 8 */}
+          <div className="text-center flex flex-col">
+            {/* <Image
+              src="/placeholder.svg?height=300&width=400"
+              alt="コーティングの様子"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg mx-auto mb-6"
+            /> */}
+            <div
+              className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              八
+            </div>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              コーティング
+            </h3>
+            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              専用のコーティング剤で小さな穴をふさぎます。
+            </p>
+          </div>
+
+          {/* 工程 9 */}
+          <div className="text-center flex flex-col">
+            {/* <Image
+              src="/placeholder.svg?height=300&width=400"
+              alt="目地補修の様子"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-lg mx-auto mb-6"
+            /> */}
+            <div
+              className="w-16 h-16 mx-auto mb-4 bg-[#20319d] rounded-full flex items-center justify-center text-white text-2xl font-bold"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              九
+            </div>
+            <h3
+              className="text-xl md:text-2xl font-bold mb-4 text-[#20319d]"
+              style={{ fontFamily: "Shippori Mincho, serif" }}
+            >
+              目地補修
+            </h3>
+            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              欠けたりヒビが入った目地を補修します。
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Contact Section */}
       <section className="py-16 md:py-24 px-4">
@@ -460,7 +654,7 @@ export default function HomePage() {
           {/* 人物写真を追加 */}
           <div className="mb-8">
             <Image
-              src="/placeholder.svg?height=200&width=200"
+              src="/restone_logo.jpg?height=200&width=200"
               alt="代表者写真"
               width={200}
               height={200}
@@ -482,20 +676,22 @@ export default function HomePage() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-16">
-            <a href="tel:03-1234-5678" className="block">
-              <Button className="w-full h-20 text-xl md:text-2xl bg-[#20319d] hover:bg-[#1a2a8a] text-white rounded-lg shadow-lg">
-                <Phone className="w-8 h-8 mr-4" />
-                電話で無料相談
+            {/* Googleフォームへのボタン */}
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDDgpRZbLm7LSqQU6kegFriFqqqYAC4xYj8HQ7DShepCqn5g/viewform?usp=sharing&ouid=108276482871088353732" target="_blank" rel="noopener noreferrer" className="block">
+              <Button className="w-full h-20 text-xl md:text-2xl bg-[#20319d] hover:bg-[#1a2a8a] text-white rounded-lg shadow-lg transition-colors duration-300">
+                <ClipboardList className="w-8 h-8 mr-4" />
+                フォームでお問い合わせ
               </Button>
             </a>
 
-            <a href="mailto:info@restone.jp" className="block">
-              <Button className="w-full h-20 text-xl md:text-2xl bg-[#20319d] hover:bg-[#1a2a8a] text-white rounded-lg shadow-lg">
-                <Mail className="w-8 h-8 mr-4" />
-                メールでお問い合わせ
+            {/* 公式LINEへのボタン (カスタムカラーを使用) */}
+            <a href="https://lin.ee/ml9SSzW" target="_blank" rel="noopener noreferrer" className="block">
+            <Button className="w-full h-20 text-xl md:text-2xl bg-[#20319d] hover:bg-[#1a2a8a] text-white rounded-lg shadow-lg transition-colors duration-300">
+                <MessageCircle className="w-8 h-8 mr-4" />
+                LINEで無料相談
               </Button>
             </a>
-          </div>
+        </div>
 
           {/* Company Info */}
           <div className="bg-white p-8 rounded-lg shadow-lg text-left">
@@ -512,7 +708,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center">
                 <span className="font-bold w-24 md:w-32">所在地：</span>
-                <span>東京都○○区○○ ○-○-○</span>
+                <span>東京都立川市西砂町5-66-32</span>
               </div>
               <div className="flex items-center">
                 <span className="font-bold w-24 md:w-32">営業時間：</span>
