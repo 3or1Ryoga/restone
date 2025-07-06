@@ -1106,7 +1106,7 @@ export default function HomePage() {
             下記のボタンをクリックして「友だち追加」
           </p>
 
-          {/* LINE友だち追加ボタン */}
+          {/* LINE友だち追加ボタン　こ */}
           <div className="mb-8">
             <a
               href="https://lin.ee/ml9SSzW" 
