@@ -1337,136 +1337,137 @@ export default function HomePage() {
     </section>
 
       {/* Technology Section */}
+      {/* Technology Section */}
       <section className="py-16 md:py-24 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-black"
-            style={{ fontFamily: "Shippori Mincho, serif" }}
-          >
-            リストーンワークスの技術
-          </h2>
-          <p
-            className="text-center text-xl md:text-2xl text-black font-bold mb-16"
-            style={{ fontFamily: "Shippori Mincho, serif" }}
-          >
-            BEFORE<span className="text-black mx-2">→</span>AFTER
-          </p>
+      <div className="max-w-7xl mx-auto">
+        <h2
+        className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 text-black"
+        style={{ fontFamily: "Shippori Mincho, serif" }}
+        >
+        リストーンワークスの技術
+        </h2>
+        <p
+        className="text-center text-xl md:text-2xl text-black font-bold mb-16"
+        style={{ fontFamily: "Shippori Mincho, serif" }}
+        >
+        AFTER<span className="text-black mx-2">←</span>BEFORE
+        </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
-            
-            <div className="text-center">
-              <div className="grid grid-cols-2 gap-2 mb-4">
-                <div>
-                  <p className="font-bold mb-2 text-gray-600">Before</p>
-                  <Image
-                    src="sekou1.jpeg"
-                    alt="特殊洗浄前の地蔵"
-                    width={400}
-                    height={500}
-                    className="rounded-lg shadow-lg object-cover w-full h-auto"
-                  />
-                </div>
-                <div>
-                  <p className="font-bold mb-2 text-gray-600">After</p>
-                  <Image
-                    src="sekou2.jpeg"
-                    alt="特殊洗浄後の地蔵"
-                    width={400}
-                    height={500}
-                    className="rounded-lg shadow-lg object-cover w-full h-auto"
-                  />
-                </div>
-              </div>
-              <h4 className="text-lg font-bold text-[#333333]" style={{ fontFamily: "Shippori Mincho, serif" }}>
-                特殊洗浄の施工例
-              </h4>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
 
-            <div className="text-center">
-              <div className="grid grid-cols-2 gap-2 mb-4">
-                <div>
-                  <p className="font-bold mb-2 text-gray-600">Before</p>
-                  <Image
-                    src="sekou4_2.JPEG"
-                    alt="特殊洗浄前の墓石"
-                    width={400}
-                    height={500}
-                    className="rounded-lg shadow-lg object-cover w-full h-auto"
-                  />
-                </div>
-                <div>
-                  <p className="font-bold mb-2 text-gray-600">After</p>
-                  <Image
-                    src="sekou7_2.JPEG"
-                    alt="特殊洗浄後の墓石"
-                    width={400}
-                    height={500}
-                    className="rounded-lg shadow-lg object-cover w-full h-auto"
-                  />
-                </div>
-              </div>
-              <h4 className="text-lg font-bold text-[#333333]" style={{ fontFamily: "Shippori Mincho, serif" }}>
-                特殊洗浄の施工例
-              </h4>
-            </div>
-
-            <div className="text-center">
-              <div className="grid grid-cols-2 gap-2 mb-4">
-                <div>
-                  <p className="font-bold mb-2 text-gray-600">Before</p>
-                  <Image
-                    src="sekou8.JPEG"
-                    alt="文字ペイント前の墓石"
-                    width={400}
-                    height={500}
-                    className="rounded-lg shadow-lg object-cover w-full h-auto"
-                  />
-                </div>
-                <div>
-                  <p className="font-bold mb-2 text-gray-600">After</p>
-                  <Image
-                    src="sekou3.jpeg"
-                    alt="文字ペイント後の墓石"
-                    width={400}
-                    height={500}
-                    className="rounded-lg shadow-lg object-cover w-full h-auto"
-                  />
-                </div>
-              </div>
-              <h4 className="text-lg font-bold text-[#333333]" style={{ fontFamily: "Shippori Mincho, serif" }}>
-                特殊洗浄/文字ペイントの施工
-              </h4>
-            </div>
-
-            <div className="text-center">
-              <div className="grid grid-cols-2 gap-2 mb-4">
-                <div>
-                  <p className="font-bold mb-2 text-gray-600">Before</p>
-                  <Image
-                    src="sekou5.jpeg"
-                    alt="施工前の墓誌"
-                    width={400}
-                    height={500}
-                    className="rounded-lg shadow-lg object-cover w-full h-auto"
-                  />
-                </div>
-                <div>
-                  <p className="font-bold mb-2 text-gray-600">After</p>
-                  <Image
-                    src="sekou6.jpeg"
-                    alt="施工後の墓誌"
-                    width={400}
-                    height={500}
-                    className="rounded-lg shadow-lg object-cover w-full h-auto"
-                  />
-                </div>
-              </div>
-              <h4 className="text-lg font-bold text-[#333333]" style={{ fontFamily: "Shippori Mincho, serif" }}>
-                特殊洗浄/コーティング/文字ペイントの施工
-              </h4>
-            </div>
+        <div className="text-center">
+          <div className="grid grid-cols-2 gap-2 mb-4">
+          <div>
+            <p className="font-bold mb-2 text-gray-600">After</p>
+            <Image
+            src="sekou2.jpeg"
+            alt="特殊洗浄後の地蔵"
+            width={400}
+            height={500}
+            className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
           </div>
+          <div>
+            <p className="font-bold mb-2 text-gray-600">Before</p>
+            <Image
+            src="sekou1.jpeg"
+            alt="特殊洗浄前の地蔵"
+            width={400}
+            height={500}
+            className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
+          </div>
+          </div>
+          <h4 className="text-lg font-bold text-[#333333]" style={{ fontFamily: "Shippori Mincho, serif" }}>
+          特殊洗浄の施工例
+          </h4>
         </div>
+
+        <div className="text-center">
+          <div className="grid grid-cols-2 gap-2 mb-4">
+          <div>
+            <p className="font-bold mb-2 text-gray-600">After</p>
+            <Image
+            src="sekou7_2.JPEG"
+            alt="特殊洗浄後の墓石"
+            width={400}
+            height={500}
+            className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
+          </div>
+          <div>
+            <p className="font-bold mb-2 text-gray-600">Before</p>
+            <Image
+            src="sekou4_2.JPEG"
+            alt="特殊洗浄前の墓石"
+            width={400}
+            height={500}
+            className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
+          </div>
+          </div>
+          <h4 className="text-lg font-bold text-[#333333]" style={{ fontFamily: "Shippori Mincho, serif" }}>
+          特殊洗浄の施工例
+          </h4>
+        </div>
+
+        <div className="text-center">
+          <div className="grid grid-cols-2 gap-2 mb-4">
+          <div>
+            <p className="font-bold mb-2 text-gray-600">After</p>
+            <Image
+            src="sekou6.jpeg"
+            alt="文字ペイント後の墓石"
+            width={400}
+            height={500}
+            className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
+          </div>
+          <div>
+            <p className="font-bold mb-2 text-gray-600">Before</p>
+            <Image
+            src="sekou5.jpeg"
+            alt="文字ペイント前の墓石"
+            width={400}
+            height={500}
+            className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
+          </div>
+          </div>
+          <h4 className="text-lg font-bold text-[#333333]" style={{ fontFamily: "Shippori Mincho, serif" }}>
+          特殊洗浄/文字ペイントの施工
+          </h4>
+        </div>
+
+        <div className="text-center">
+          <div className="grid grid-cols-2 gap-2 mb-4">
+          <div>
+            <p className="font-bold mb-2 text-gray-600">After</p>
+            <Image
+            src="sekou3.jpeg"
+            alt="施工後の墓誌"
+            width={400}
+            height={500}
+            className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
+          </div>
+          <div>
+            <p className="font-bold mb-2 text-gray-600">Before</p>
+            <Image
+            src="sekou8.JPEG"
+            alt="施工前の墓誌"
+            width={400}
+            height={500}
+            className="rounded-lg shadow-lg object-cover w-full h-auto"
+            />
+          </div>
+          </div>
+          <h4 className="text-lg font-bold text-[#333333]" style={{ fontFamily: "Shippori Mincho, serif" }}>
+          特殊洗浄/コーティング/文字ペイントの施工
+          </h4>
+        </div>
+        </div>
+      </div>
       </section>
 
       {/* Services and Pricing Section */}
@@ -1489,7 +1490,7 @@ export default function HomePage() {
                 お掃除プラン
               </h3>
               <p className="font-semibold text-gray-700 mb-4" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                （下記工程：1, 6）
+                （下記工程：①⑥）
               </p>
               <p className="text-base leading-relaxed mb-6" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
                 墓石の拭き上げ、周囲の草取り・清掃を行う簡易的なプラン
@@ -1513,11 +1514,11 @@ export default function HomePage() {
                 手洗い洗浄プラン
               </h3>
               <p className="font-semibold text-gray-700 mb-4" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                （下記工程：1, 2, 3, 4, 5, 6, 7）
+                （下記工程：①②③④⑤⑥）
               </p>
               <p className="text-base leading-relaxed mb-6" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
                 手洗いで優しく墓石の内部から長年の汚れを取り去り、<br />
-                キレイに磨き上げ、周囲の草取り・清掃、文字ペイントも付いたプラン<br />
+                キレイに磨き上げ、周囲の草取り・清掃も付いたプラン<br />
                 ※墓石洗浄には石材に優しい専用洗剤を使用
                 {/* <span className="text-sm text-gray-600 mt-2 block">※墓石洗浄には石材に優しい専用洗剤を使用</span> */}
               </p>
@@ -1537,7 +1538,7 @@ export default function HomePage() {
                 手洗い洗浄＆コーティングプラン
               </h3>
               <p className="font-semibold text-gray-700 mb-4" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-                （下記工程：1, 2, 3, 4, 5, 6, 7, 8, 9）
+                （下記工程：①②③④⑤⑥⑦⑧）
               </p>
               <p className="text-base leading-relaxed mb-6" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
                 手洗い洗浄プランに加え、墓石表面の小さな穴をふさぐ特殊コーティングを施して、<br />
@@ -1552,7 +1553,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="text-center mt-12 pt-4">
+          <div className="text-center mt-12 py-4">
             <p className="text-base text-gray-700" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
               各種料金は、建墓年数、墓石サイズ、汚れの状態によって変動いたします<br />
               詳しくはお見積もりにてご提示いたします
@@ -1595,7 +1596,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 px-4 bg-white">
+      {/* 清掃工程セクションの始まり */}
+    <section className="py-16 md:py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2
           className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-2 text-black"
@@ -1605,180 +1607,187 @@ export default function HomePage() {
         </h2>
         <p className="text-center text-lg text-gray-500 mb-16 font-sans">PROCESS</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* 8つの工程をグリッドで表示 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* 工程 1 */}
-          <div className="text-center flex flex-col">
-            <div
-              className="w-16 h-16 mx-auto mb-4 border-2 border-black flex items-center justify-center text-black text-2xl font-bold"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              1
+          <div className="flex flex-col">
+            <Image
+              src="/koutei_1.jpg"
+              alt="草取り・掃除の様子"
+              width={400}
+              height={300}
+              className="rounded-md shadow-lg mb-4 w-full object-cover aspect-[4/3]"
+            />
+            <div className="flex items-center mb-2">
+              <div className="border border-black flex-shrink-0" style={{ padding: '2px 8px' }}>
+                <span className="text-xl font-bold" style={{ fontFamily: "Shippori Mincho, serif" }}>1</span>
+              </div>
+              <h3 className="text-xl font-bold text-black ml-3" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                草取り・掃除
+              </h3>
             </div>
-            <h3
-              className="text-xl md:text-2xl font-bold mb-4 text-black"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              草取り・掃除
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-              お墓周辺の草取りと清掃をします
+            <p className="text-base leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              お墓周辺の草取りと清掃をします。
             </p>
           </div>
 
           {/* 工程 2 */}
-          <div className="text-center flex flex-col">
-            <div
-              className="w-16 h-16 mx-auto mb-4 border-2 border-black flex items-center justify-center text-black text-2xl font-bold"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              2
+          <div className="flex flex-col">
+            <Image
+              src="/koutei_2.jpg"
+              alt="汚れ落としの様子"
+              width={400}
+              height={300}
+              className="rounded-md shadow-lg mb-4 w-full object-cover aspect-[4/3]"
+            />
+            <div className="flex items-center mb-2">
+              <div className="border border-black flex-shrink-0" style={{ padding: '2px 8px' }}>
+                <span className="text-xl font-bold" style={{ fontFamily: "Shippori Mincho, serif" }}>2</span>
+              </div>
+              <h3 className="text-xl font-bold text-black ml-3" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                汚れ落とし
+              </h3>
             </div>
-            <h3
-              className="text-xl md:text-2xl font-bold mb-4 text-black"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              汚れ落とし
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-              たっぷりと水をかけ、軟らかいヘラで表面にこびりついた汚れを落とします
+            <p className="text-base leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              たっぷりと水をかけ、軟らかいブラシで表面にこびりついた汚れを落とします。
             </p>
           </div>
 
           {/* 工程 3 */}
-          <div className="text-center flex flex-col">
-            <div
-              className="w-16 h-16 mx-auto mb-4 border-2 border-black flex items-center justify-center text-black text-2xl font-bold"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              3
+          <div className="flex flex-col">
+            <Image
+              src="/koutei_3.jpg"
+              alt="洗剤塗布の様子"
+              width={400}
+              height={300}
+              className="rounded-md shadow-lg mb-4 w-full object-cover aspect-[4/3]"
+            />
+            <div className="flex items-center mb-2">
+              <div className="border border-black flex-shrink-0" style={{ padding: '2px 8px' }}>
+                <span className="text-xl font-bold" style={{ fontFamily: "Shippori Mincho, serif" }}>3</span>
+              </div>
+              <h3 className="text-xl font-bold text-black ml-3" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                洗剤塗布
+              </h3>
             </div>
-            <h3
-              className="text-xl md:text-2xl font-bold mb-4 text-black"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              洗剤塗布
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-            石材に優しい専用洗剤を汚れの性質ごとに使い分けて塗布します
+            <p className="text-base leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              石材に優しい専用洗剤を汚れの性質ごとに使い分けて塗布します。
             </p>
           </div>
 
           {/* 工程 4 */}
-          <div className="text-center flex flex-col mt-8 md:mt-0">
-            <div
-              className="w-16 h-16 mx-auto mb-4 border-2 border-black flex items-center justify-center text-black text-2xl font-bold"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              4
+          <div className="flex flex-col">
+            <Image
+              src="/koutei_4.jpg"
+              alt="細かな汚れ落としの様子"
+              width={400}
+              height={300}
+              className="rounded-md shadow-lg mb-4 w-full object-cover aspect-[4/3]"
+            />
+            <div className="flex items-center mb-2">
+              <div className="border border-black flex-shrink-0" style={{ padding: '2px 8px' }}>
+                <span className="text-xl font-bold" style={{ fontFamily: "Shippori Mincho, serif" }}>4</span>
+              </div>
+              <h3 className="text-xl font-bold text-black ml-3" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                汚れ落とし
+              </h3>
             </div>
-            <h3
-              className="text-xl md:text-2xl font-bold mb-4 text-black"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              汚れ落とし
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-            洗剤によって浮き上がった汚れをまんべんなく落とします。文字のくぼみや継ぎ目などの細かな箇所も、道具を使い分けて汚れを落とします
+            <p className="text-base leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              洗剤で浮き上がった汚れを落とします。文字のくぼみ等、細かな箇所も道具を使い分けます。
             </p>
           </div>
 
           {/* 工程 5 */}
-          <div className="text-center flex flex-col mt-8 md:mt-0">
-            <div
-              className="w-16 h-16 mx-auto mb-4 border-2 border-black flex items-center justify-center text-black text-2xl font-bold"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              5
+          <div className="flex flex-col">
+            <Image
+              src="/koutei_5.jpg"
+              alt="洗い流しの様子"
+              width={400}
+              height={300}
+              className="rounded-md shadow-lg mb-4 w-full object-cover aspect-[4/3]"
+            />
+            <div className="flex items-center mb-2">
+              <div className="border border-black flex-shrink-0" style={{ padding: '2px 8px' }}>
+                <span className="text-xl font-bold" style={{ fontFamily: "Shippori Mincho, serif" }}>5</span>
+              </div>
+              <h3 className="text-xl font-bold text-black ml-3" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                洗い流し
+              </h3>
             </div>
-            <h3
-              className="text-xl md:text-2xl font-bold mb-4 text-black"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              洗い流し
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-              たっぷり水を使って、手で丁寧に洗い流します
+            <p className="text-base leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              たっぷり水を使って、手で丁寧に洗い流します。
             </p>
           </div>
 
           {/* 工程 6 */}
-          <div className="text-center flex flex-col mt-8 md:mt-0">
-            <div
-              className="w-16 h-16 mx-auto mb-4 border-2 border-black flex items-center justify-center text-black text-2xl font-bold"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              6
+          <div className="flex flex-col">
+            <Image
+              src="/koutei_6.jpg"
+              alt="拭き上げの様子"
+              width={400}
+              height={300}
+              className="rounded-md shadow-lg mb-4 w-full object-cover aspect-[4/3]"
+            />
+            <div className="flex items-center mb-2">
+              <div className="border border-black flex-shrink-0" style={{ padding: '2px 8px' }}>
+                <span className="text-xl font-bold" style={{ fontFamily: "Shippori Mincho, serif" }}>6</span>
+              </div>
+              <h3 className="text-xl font-bold text-black ml-3" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                拭き上げ
+              </h3>
             </div>
-            <h3
-              className="text-xl md:text-2xl font-bold mb-4 text-black"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              拭き上げ
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-            キレイになったお墓を丁寧に拭き上げます
+            <p className="text-base leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              キレイになったお墓を丁寧に拭き上げます。
             </p>
           </div>
-          
+
           {/* 工程 7 */}
-          <div className="text-center flex flex-col mt-8 lg:mt-0">
-            <div
-              className="w-16 h-16 mx-auto mb-4 border-2 border-black flex items-center justify-center text-black text-2xl font-bold"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              7
+          <div className="flex flex-col">
+            <Image
+              src="/koutei_7.jpg"
+              alt="コーティングの様子"
+              width={400}
+              height={300}
+              className="rounded-md shadow-lg mb-4 w-full object-cover aspect-[4/3]"
+            />
+            <div className="flex items-center mb-2">
+              <div className="border border-black flex-shrink-0" style={{ padding: '2px 8px' }}>
+                <span className="text-xl font-bold" style={{ fontFamily: "Shippori Mincho, serif" }}>7</span>
+              </div>
+              <h3 className="text-xl font-bold text-black ml-3" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                コーティング
+              </h3>
             </div>
-            <h3
-              className="text-xl md:text-2xl font-bold mb-4 text-black"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              コーティング
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-            専用のコーティング剤で墓石表面の小さな穴をふさぎます
+            <p className="text-base leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              専用のコーティング剤で墓石表面の小さな穴をふさぎます。
             </p>
           </div>
 
           {/* 工程 8 */}
-          <div className="text-center flex flex-col mt-8 lg:mt-0">
-            <div
-              className="w-16 h-16 mx-auto mb-4 border-2 border-black flex items-center justify-center text-black text-2xl font-bold"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              8
+          <div className="flex flex-col">
+            <Image
+              src="/koutei_8.jpg"
+              alt="文字塗りの様子"
+              width={400}
+              height={300}
+              className="rounded-md shadow-lg mb-4 w-full object-cover aspect-[4/3]"
+            />
+            <div className="flex items-center mb-2">
+              <div className="border border-black flex-shrink-0" style={{ padding: '2px 8px' }}>
+                <span className="text-xl font-bold" style={{ fontFamily: "Shippori Mincho, serif" }}>8</span>
+              </div>
+              <h3 className="text-xl font-bold text-black ml-3" style={{ fontFamily: "Shippori Mincho, serif" }}>
+                文字塗り
+              </h3>
             </div>
-            <h3
-              className="text-xl md:text-2xl font-bold mb-4 text-black"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              文字塗り
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-            専用の塗料で文字に色を入れます
-            </p>
-          </div>
-
-          {/* 工程 9 */}
-          <div className="text-center flex flex-col mt-8 lg:mt-0">
-            <div
-              className="w-16 h-16 mx-auto mb-4 border-2 border-black flex items-center justify-center text-black text-2xl font-bold"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              9
-            </div>
-            <h3
-              className="text-xl md:text-2xl font-bold mb-4 text-black"
-              style={{ fontFamily: "Shippori Mincho, serif" }}
-            >
-              目地補修
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed flex-grow" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
-            欠けたりヒビが入った目地を補修します
+            <p className="text-base leading-relaxed" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
+              専用の塗料で文字に色を入れます。
             </p>
           </div>
         </div>
       </div>
     </section>
+    {/* 清掃工程セクションの終わり */}
 
     <section className="py-16 md:py-24 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -1948,7 +1957,7 @@ export default function HomePage() {
             <div className="space-y-4 text-lg md:text-xl" style={{ fontFamily: "Noto Sans JP, sans-serif" }}>
               <div className="flex items-center">
                 <span className="font-bold w-24 md:w-32">代表者　</span>
-                <span>青木晶典</span>
+                <span>青木昌典</span>
               </div>
               <div className="flex items-center">
                 <span className="font-bold w-24 md:w-32">所在地　</span>
@@ -1958,16 +1967,25 @@ export default function HomePage() {
                 <span className="font-bold w-24 md:w-32">営業時間：</span>
                 <span>9:00〜18:00（年中無休）</span>
               </div> */}
-              <div className="flex items-center">
-                <span className="font-bold w-24 md:w-32"></span>
+              {/* <div className="items-center">
+                <span className="font-bold  text-center w-24 md:w-32"></span>
                 <span>アシストーン株式会社正規代理店</span>
                 <Image
                   src="logo.JPEG"
                   alt="ロゴ画像"
                   width={120}
                   height={40}
-                  className="ml-auto"
+                  className="center"
                 />
+              </div> */}
+              <div className="flex flex-col items-center">
+                <Image
+                    src="logo.JPEG"
+                    alt="ロゴ画像"
+                    width={120}
+                    height={40}
+                  />
+                <span className="mb-2">アシストーン株式会社正規代理店</span>
               </div>
             </div>
           </div>
