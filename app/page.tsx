@@ -1359,7 +1359,7 @@ export default function HomePage() {
                 <div>
                   <p className="font-bold mb-2 text-gray-600">Before</p>
                   <Image
-                    src="sekou1.JPEG"
+                    src="sekou1.jpeg"
                     alt="特殊洗浄前の地蔵"
                     width={400}
                     height={500}
@@ -1369,7 +1369,7 @@ export default function HomePage() {
                 <div>
                   <p className="font-bold mb-2 text-gray-600">After</p>
                   <Image
-                    src="sekou2.JPEG"
+                    src="sekou2.jpeg"
                     alt="特殊洗浄後の地蔵"
                     width={400}
                     height={500}
@@ -1425,7 +1425,7 @@ export default function HomePage() {
                 <div>
                   <p className="font-bold mb-2 text-gray-600">After</p>
                   <Image
-                    src="sekou3.JPEG"
+                    src="sekou3.jpeg"
                     alt="文字ペイント後の墓石"
                     width={400}
                     height={500}
