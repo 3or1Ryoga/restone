@@ -3,11 +3,39 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "墓石清掃│Re:Stone（リストーン）- 手作業で優しく蘇らせる墓石クリーニング",
+  title: "お墓掃除・墓石清掃のプロ【リストーンワークス】",
   description:
-    "関東エリアの墓石清掃専門サービス。手作業中心の丁寧な清掃で、大切なお墓を新品同様の美しさに蘇らせます。無料見積もり実施中。",
+    "お墓のお手入れでお悩みのお客様に代わり、真心を込めてお墓掃除・墓石洗浄。写真付き報告書で、遠方でも安心してご確認いただけます。",
   keywords: "墓石清掃,墓石クリーニング,お墓掃除,関東,手作業,石材清掃",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  // --- SNS（LINE, Facebook, Xなど）向け ---
+  openGraph: {
+    // 【修正】titleと内容を統一
+    title: "お墓掃除・墓石清掃のプロ【リストーンワークス】", 
+    // 【修正】descriptionと内容を統一、またはSNS向けに最適化
+    description: "お墓のお手入れでお悩みのお客様に代わり、真心を込めてお墓掃除・墓石洗浄。遠方でも安心の写真付き報告書。", 
+    // 【修正】実際のサイトURLに書き換える
+    url: 'https://www.re-stone.jp', // 例: 実際のドメイン
+    // 【修正】サイト名を入力
+    siteName: 'リストーンワークス', 
+    images: [
+      {
+        // 【修正】OGP画像のURLを実際のパスに
+        url: 'https://www.re-stone.jp/og-image.png', 
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  // （推奨）Twitter向けの設定も追加すると、より表示をコントロールできます
+  twitter: {
+    card: 'summary_large_image',
+    title: "お墓掃除・墓石清掃のプロ【リストーンワークス】",
+    description: "お墓のお手入れでお悩みのお客様に代わり、真心を込めてお墓掃除・墓石洗浄。",
+    images: ['https://www.re-stone.jp/og-image.png'],
+  },
 }
 
 export default function RootLayout({
