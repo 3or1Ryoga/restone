@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   description:
     "お墓のお手入れでお悩みのお客様に代わり、真心を込めてお墓掃除・墓石洗浄。写真付き報告書で、遠方でも安心してご確認いただけます。",
   keywords: "墓石清掃,墓石クリーニング,お墓掃除,関東,手作業,石材清掃",
-  generator: 'v0.dev',
+  verification: {
+    google: "　　　",
+  },
+  // ▼▼▼ ここから追加・修正 ▼▼▼
+  icons: {
+    icon: '/restone_logo_512.png', // ファビコンのパス
+  },
   // --- SNS（LINE, Facebook, Xなど）向け ---
   openGraph: {
     // 【修正】titleと内容を統一
@@ -15,13 +21,13 @@ export const metadata: Metadata = {
     // 【修正】descriptionと内容を統一、またはSNS向けに最適化
     description: "お墓のお手入れでお悩みのお客様に代わり、真心を込めてお墓掃除・墓石洗浄。遠方でも安心の写真付き報告書。", 
     // 【修正】実際のサイトURLに書き換える
-    url: 'https://www.re-stone.jp', // 例: 実際のドメイン
+    url: '　　　', // 例: 実際のドメイン
     // 【修正】サイト名を入力
     siteName: 'リストーンワークス', 
     images: [
       {
         // 【修正】OGP画像のURLを実際のパスに
-        url: 'https://www.re-stone.jp/og-image.png', 
+        url: '　　　', 
         width: 1200,
         height: 630,
       },
@@ -34,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "お墓掃除・墓石清掃のプロ【リストーンワークス】",
     description: "お墓のお手入れでお悩みのお客様に代わり、真心を込めてお墓掃除・墓石洗浄。",
-    images: ['https://www.re-stone.jp/og-image.png'],
+    images: [''],
   },
 }
 
